@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; }
+
+*, *::before, *::after { box-sizing: inherit; }
+
+.u-color-white { color: #fff !important; }
+
+.u-margin-bottom-smallest { margin-bottom: .7rem; }
+
+.u-margin-bottom-small { margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium { margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big { margin-bottom: 8rem !important; }
+
+.u-margin-top-big { margin-top: 8rem; }
+
+.u-margin-top-huge { margin-top: 10rem; }
+
+html { box-sizing: border-box; font-size: 620.5%; }
+
+.btn:link, .btn:visited { text-decoration: none; }

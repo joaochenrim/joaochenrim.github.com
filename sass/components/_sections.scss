@@ -1,0 +1,256 @@
+////////////////////MAIN
+
+.main {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-grey-dark-1, 0.6),
+      rgba($color-grey-dark-2, 0.6)
+    ),
+    url(../img/paul-gilmore-211347.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__paragraph {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: $color-white;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+  }
+}
+
+////////////////////ABOUT
+
+.about {
+  padding: 10rem 0;
+
+  &__content {
+    display: flex;
+
+    &:hover .about__caption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover .about__img {
+      transform: translateX(-4rem) scale(1.2);
+      filter: blur(3px) brightness(80%) grayscale(0.7);
+    }
+  }
+
+  &__shape {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    position: relative;
+    backface-visibility: hidden;
+    overflow: hidden;
+    margin: auto;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      border-radius: none;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: $color-white;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &__img {
+    height: 100%;
+    border-radius: 5%;
+    filter: grayscale(0.7);
+    transform: translateX(-4rem) scale(1);
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &__paragraph {
+    padding: 0 1rem;
+    font-size: 1.7rem;
+    color: #4a4a4a;
+    align-self: center;
+    line-height: 4rem;
+    flex: 0 0 50%;
+    text-align: justify;
+  }
+
+  .about__link {
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+.container__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+////////////////////SOCIAL
+
+.social {
+  background-color: $color-grey-light-3;
+  padding: 7rem;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__item {
+    list-style: none;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    fill: var(--color-grey-dark-3);
+    transition: all 0.3s;
+
+    &--facebook:hover {
+      fill: $color-facebook;
+    }
+
+    &--twitter:hover {
+      fill: $color-twitter;
+    }
+
+    &--instagram:hover {
+      fill: $color-instagram;
+    }
+
+    &--linkedin:hover {
+      fill: $color-linkedin;
+    }
+
+    &--tumblr:hover {
+      fill: $color-tumblr;
+    }
+  }
+}
+
+////////////////////CONTACT
+
+.contact {
+  padding: 10rem;
+  @include flexCenter;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-grey-dark-1, 0.8),
+      rgba($color-grey-dark-2, 0.8)
+    ),
+    url(../img/eberhard-grossgasteiger-487118.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__form {
+    @include flexCenter;
+    background-color: $color-white;
+    width: 40rem;
+    padding: 4rem;
+    border-radius: 0.5rem;
+  }
+
+  &__input {
+    padding: 2.5rem;
+    @include flexCenter;
+    margin-bottom: 1.5rem;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    border: none;
+    background-color: $color-white;
+    border: 1px solid $color-grey-light-2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: $color-grey-light-2;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-grey-dark-2, 0.1);
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &__textarea {
+    height: 100px;
+    padding: 2.5rem;
+  }
+
+  &__input--submit {
+    margin-top: 3rem;
+    border-radius: 2px;
+    color: $color-white;
+    font-size: 1.2rem;
+    padding: 9px;
+    background-color: $color-primary;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-grey-dark-2;
+      border: 1px solid $color-grey-dark-2;
+      background-color: transparent;
+
+    }
+    
+  }
+}
+
+
+////////////////////FOOTER
+
+.footer {
+  
+  background-color: $color-grey-dark-1;
+
+
+  &__paragraph {
+    padding: 5rem;
+    color: $color-primary;
+    font-size: 2rem;
+    
+  }
+}
+
+.container__footer {
+  justify-content: center;
+} 
