@@ -29,6 +29,10 @@
     color: $color-white;
     font-weight: 300;
     letter-spacing: 0.2rem;
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -37,8 +41,16 @@
 .about {
   padding: 10rem 0;
 
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+
   &__content {
     display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
     &:hover .about__caption {
       opacity: 1;
@@ -66,6 +78,12 @@
       -webkit-clip-path: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
       border-radius: none;
+    }
+
+    @include respond(phone) {
+      width: 18rem;
+      height: 18rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -122,11 +140,19 @@
   background-color: $color-grey-light-3;
   padding: 7rem;
 
+  @include respond(phone) {
+    padding: 3rem;
+  }
+
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+
+    @include respond(phone) { 
+      justify-content: space-between;
+  }
   }
 
   &__item {
@@ -167,6 +193,11 @@
 
 .contact {
   padding: 10rem;
+  
+  @include respond(phone) {
+    padding: 3rem 0 5rem 0;
+  }
+  
   @include flexCenter;
   background-image: linear-gradient(
       to right bottom,
@@ -184,6 +215,10 @@
     width: 40rem;
     padding: 4rem;
     border-radius: 0.5rem;
+    
+    @include respond(phone) {
+      width: 45rem;
+    }
   }
 
   &__input {
@@ -229,28 +264,26 @@
       color: $color-grey-dark-2;
       border: 1px solid $color-grey-dark-2;
       background-color: transparent;
-
     }
-    
   }
 }
-
 
 ////////////////////FOOTER
 
 .footer {
-  
   background-color: $color-grey-dark-1;
-
 
   &__paragraph {
     padding: 5rem;
     color: $color-primary;
     font-size: 2rem;
-    
+
+    @include respond(phone) {
+      padding: 2rem 0;
+    }
   }
 }
 
 .container__footer {
   justify-content: center;
-} 
+}
