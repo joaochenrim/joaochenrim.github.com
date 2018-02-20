@@ -78,12 +78,11 @@
       -webkit-clip-path: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
       border-radius: none;
+     
     }
 
     @include respond(phone) {
-      width: 18rem;
-      height: 18rem;
-      margin-bottom: 3rem;
+      display: none;
     }
   }
 

@@ -148,9 +148,7 @@ body {
         border-radius: none; } }
     @media only screen and (max-width: 37.5em) {
       .about__shape {
-        width: 18rem;
-        height: 18rem;
-        margin-bottom: 3rem; } }
+        display: none; } }
   .about__caption {
     position: absolute;
     top: 50%;
