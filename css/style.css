@@ -189,8 +189,8 @@ body {
 
 .social {
   background-color: #e8e8e8;
-  padding: 7rem; }
-  @media only screen and (max-width: 37.5em) {
+  padding: 4rem; }
+  @media only screen and (max-width: 56.25em) {
     .social {
       padding: 3rem; } }
   .social__nav {
@@ -321,7 +321,12 @@ body {
   justify-content: space-between; }
   .user-nav__item {
     list-style: none;
-    margin: 3rem; }
+    margin: 3rem;
+    height: 3rem;
+    width: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .user-nav__item {
+        margin: 2rem; } }
   .user-nav__link:link, .user-nav__link:visited {
     font-size: 1.5rem;
     text-decoration: none;

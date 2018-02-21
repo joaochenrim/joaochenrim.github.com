@@ -137,9 +137,9 @@
 
 .social {
   background-color: $color-grey-light-3;
-  padding: 7rem;
+  padding: 4rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding: 3rem;
   }
 

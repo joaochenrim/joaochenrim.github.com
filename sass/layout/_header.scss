@@ -29,6 +29,10 @@
     &__item {
         list-style: none;
         margin: 3rem;
+
+        @include respond(phone) { 
+            margin: 2rem;   
+        }
     }
 
     &__link:link,
