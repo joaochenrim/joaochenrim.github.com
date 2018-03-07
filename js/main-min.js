@@ -1,1 +1,0 @@
-var header=document.getElementById("header");window.onscroll=function(){window.pageYOffset>300?header.classList.add("header--dark"):header.classList.remove("header--dark")};

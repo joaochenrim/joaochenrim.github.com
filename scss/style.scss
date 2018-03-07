@@ -1,0 +1,146 @@
+// VARIABLES
+
+$color-github: #000;
+$color-twitter: #1da1f2;
+$color-instagram: #c32aa3;
+$color-linkedin: #007bb5;
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+
+#main-header {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.port-item {
+  width: 25%;
+  font-size: .8rem; 
+
+  .fa {
+    font-size: 2em;
+  }
+}
+
+.port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.foto {
+  background-image: url("../img/foto_perfil.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fa {
+  &-linkedin:hover {
+    color: $color-linkedin !important;
+  }
+
+  &-instagram:hover {
+    color: $color-instagram !important;
+  }
+
+  &-github:hover {
+    color: $color-github !important;
+  }
+
+  &-twitter:hover {
+    color: $color-twitter !important;
+  }
+}
+
+.contact-card {
+  .fa {
+    font-size: 2em; 
+  }
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 576px) {
+  .port-item {
+    padding: 1.8em !important;
+  }
+
+  .port-item .fa {
+    font-size: 1em;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .presentation {
+      padding: 1.5em; 
+  }
+
+  .container {
+      max-width: 100%;
+      padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+    .port-item {
+      padding: 1.8em !important;
+    }
+  
+    .port-item .fa {
+      font-size: 1em;
+    }
+  
+    .display-4 {
+      font-size: 3rem; 
+    }
+  
+  }
+
+
+@media (min-width: 992px) {
+    .port-item {
+      padding: 1.8em !important;
+      font-size: 1rem; 
+    }
+  
+    .port-item .fa {
+      font-size: 1.5em; 
+    }
+  
+    .presentation {
+        padding: 2em;
+    }
+  
+    .container {
+        max-width: 1200px;
+        padding: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+

@@ -1,15 +1,9 @@
-//HEADER ON SCROLL
+$('.port-item').click(function(){
+    $('.collapse').collapse('hide');
+});
 
-
-var header = document.getElementById('header');
-
-window.onscroll = function() {
-    if (window.pageYOffset > 300) {
-        header.classList.add("header--dark");
-    
-    } else {
-        header.classList.remove("header--dark");
-    }
-};
-		
+$(document).on('click', '[data-toggle="lightbox"]', function(event){
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
 
