@@ -74,7 +74,7 @@ h6 {
   .port-item {
     padding: 1.8em !important; }
   .port-item .fa {
-    font-size: 1em; }
+    font-size: 1.5em; }
   .display-4 {
     font-size: 2rem; }
   .presentation {
@@ -86,8 +86,6 @@ h6 {
 @media (min-width: 768px) {
   .port-item {
     padding: 1.8em !important; }
-  .port-item .fa {
-    font-size: 1em; }
   .display-4 {
     font-size: 3rem; } }
 
@@ -95,8 +93,6 @@ h6 {
   .port-item {
     padding: 1.8em !important;
     font-size: 1rem; }
-  .port-item .fa {
-    font-size: 1.5em; }
   .presentation {
     padding: 2em; }
   .container {
